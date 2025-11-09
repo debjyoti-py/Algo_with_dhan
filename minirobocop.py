@@ -16,6 +16,12 @@ tsl         = Tradehull(client_code,token_id)
 wb            = xw.Book('Mini_robocop.xlsx')
 Live_Trading  = wb.sheets['Live_Trading']
 Orderbook     = wb.sheets['Orderbook']
+
+
+Live_Trading.range('B2:C50').value = None
+Live_Trading.range('H2:K50').value = None
+
+
 bot_token           = "8549724310:AAHOJhoxbl2NPzHblsi04cRVabjREadq-UU"
 receiver_chat_id    = "6193962152"
 
